@@ -3,7 +3,7 @@
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <%= form_for(@person) do |f| %>
+    <%= form_for(@user) do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
     
       <%= f.label :name %>
@@ -22,7 +22,7 @@
     <% end %>
     
     <div class="gravatar_edit">
-      <%= gravatar_for @person %>
+      <%= gravatar_for @user %>
       <a href="http://gravatar.com/emails" target=_blank>change</a>
     </div>
   </div>
